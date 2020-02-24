@@ -238,6 +238,7 @@ public class UIManager extends Application {
 		// 	(FROM == clientuser & TO == user) | (FROM == user & TO == clientuser)
 		ArrayList<Map<String, String>> messages = new ArrayList<Map<String, String>>();
 		
+		// ---- TEST DATA ----
 		Map<String, String> message1 = new HashMap<String, String>();
 		message1.put("to", this.get_username());
 		message1.put("from", this.get_clientUsername());
@@ -262,6 +263,8 @@ public class UIManager extends Application {
 		messages.add(message1);
 		messages.add(message2);
 		messages.add(message3);
+		
+		// ---- TEST DATA ----
 		
 		// Generate HTML/CSS response
 		Collections.sort(messages, new MessageMapComparator("time"));
