@@ -25,7 +25,6 @@ import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 
 
-
 public class UIManager extends Application {
 	
 	private String _username;
